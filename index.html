@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asian Recipe Heaven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("bk3.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.2); 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            flex-wrap: wrap;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: seagreen;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: seagreen;
+            background: beige;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: transform 0.3s ease, background 0.3s ease;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        nav a:hover {
+            background-color: rgb(245, 244, 203);
+            transform: scale(1.1);
+        }
+
+        main {
+            margin-top: 40px;
+            padding: 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #d2691e;
+            margin-bottom: 30px;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .categories a {
+            background-color: #ffe4e1;
+            padding: 15px 25px;
+            border-radius: 10px;
+            color: #d2691e;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .categories a:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+            background-color: seagreen;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>おいしい oishii</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.php">Search</a>
+            <a href="signup.php">Sign Up</a>
+            <a href="add_recipe.php">Add Recipe</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Popular Categories</h2>
+            <div class="categories">
+                <a href="search.php?category=Korean">Korean</a>
+                <a href="search.php?category=Japanese">Japanese</a>
+                <a href="search.php?category=Chinese">Chinese</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
