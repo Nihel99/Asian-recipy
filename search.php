@@ -21,12 +21,12 @@ $ingredient = isset($_GET['ingredient']) ? trim($_GET['ingredient']) : '';
             margin: 0;
             padding: 0;
             text-align: center;
-            color: #fff; /* Set text color to white for contrast */
+            color: #fff;
             animation: fadeIn 1s ease-out;
         }
 
         header {
-            background: rgba(255, 255, 255, 0.2); /* transparent white */
+            background: rgba(255, 255, 255, 0.2); 
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -68,7 +68,7 @@ $ingredient = isset($_GET['ingredient']) ? trim($_GET['ingredient']) : '';
         }
 
         form {
-            background: rgba(255, 255, 255, 0.3); /* light transparent */
+            background: rgba(255, 255, 255, 0.3); 
             padding: 20px;
             border-radius: 10px;
             max-width: 800px;
